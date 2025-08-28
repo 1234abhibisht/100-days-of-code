@@ -1,3 +1,4 @@
+/* difference, product, quotient and remainder of two numbers taken from user */
 #include <stdio.h>
 int difference(int a, int b) {
     int w=a-b;
