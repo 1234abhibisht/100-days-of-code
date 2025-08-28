@@ -1,3 +1,4 @@
+/* Sum of two numbers taken from user */
 #include <stdio.h>
 int sum(int a, int b) {
     int z=a+b;
