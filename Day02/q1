@@ -1,0 +1,22 @@
+#include <stdio.h>
+int area(int a, int b) {
+        int x=a*b;
+        printf("Area of rectangle is : %d\n",x);
+        return x;
+}
+int perimeter(int a, int b) {
+        int y=2*(a+b);
+        printf("Perimeter of rectangle is : %d",y);
+        return y;
+}
+int main(int argc, char *argv[]) {
+        int a;
+        printf("Enter length : ");
+        scanf("%d",&a);
+        int b;
+        printf("Enter breadth : ");
+        scanf("%d",&b);
+        area(a,b);
+        perimeter(a,b);
+        return 0;
+}
