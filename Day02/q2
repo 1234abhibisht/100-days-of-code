@@ -1,0 +1,20 @@
+#include <stdio.h>
+int area(int r, float pi) {
+        float x=pi*r*r;
+        printf("Area of circle is : %f\n",x);
+        return x;
+}
+int perimeter(int r, float pi) {
+        float y=2*pi*r;
+        printf("Perimeter of rectangle is : %f",y);
+        return y;
+}
+int main(int argc, char *argv[]) {
+        float pi=3.14159;
+        int r;
+        printf("Enter radius : ");
+        scanf("%d",&r);
+        area(r, pi);
+        perimeter(r,pi);
+        return 0;
+}
