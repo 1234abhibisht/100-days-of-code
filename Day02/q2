@@ -1,12 +1,13 @@
+area and circumference of circle
 #include <stdio.h>
 int area(int r, float pi) {
         float x=pi*r*r;
         printf("Area of circle is : %f\n",x);
         return x;
 }
-int perimeter(int r, float pi) {
+int circumference(int r, float pi) {
         float y=2*pi*r;
-        printf("Perimeter of rectangle is : %f",y);
+        printf("Circumference of circle is : %f",y);
         return y;
 }
 int main(int argc, char *argv[]) {
@@ -14,7 +15,7 @@ int main(int argc, char *argv[]) {
         int r;
         printf("Enter radius : ");
         scanf("%d",&r);
-        area(r, pi);
-        perimeter(r,pi);
+        area(r,pi);
+        circumference(r,pi);
         return 0;
 }
