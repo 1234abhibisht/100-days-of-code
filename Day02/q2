@@ -1,4 +1,4 @@
-area and circumference of circle
+/* area and circumference of circle */
 #include <stdio.h>
 int area(int r, float pi) {
         float x=pi*r*r;
