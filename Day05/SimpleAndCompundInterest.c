@@ -1,33 +1,32 @@
 #include <stdio.h>
 #include <math.h>
-int SimpleInterest(float p, float r, float t, float c) {
+int SimpleInterest(float principle, float rate, float time, float compounded) {
     /* SI = (P*r*t)/100 */
-    float SI=(p*r*t)/100;
+    float SI=(principle*rate*time)/100;
     printf("Simple Interest is :%f\n",SI);
     return SI;
 }
-int CompoundInterest(float p, float r, float t, float c) {
+int Compound(float principle, float rate, float time, float compounded) {
     /* A = P(1+r/n) power tn and CI = A - P*/
-    float base = (1+r/c), power = t*c;
-    float A = p*pow(base,power); 
-    float CI = A-p;
+    float base = (1+rate/compounded), power = time*compounded;
+    float Amount = principle*pow(base,power); 
+    float CI = Amount-principle;
     printf("Compund Interest is : %f",CI);
     return CI;
 }
 int main() {
-    float p;
-    printf("Enter principle : ");
-    scanf("%f",&p);
-    float r;
+    float principle ;
+    printf("Enter Principle : ");
+    scanf("%f" ,&principle);
+    float rate;
     printf("Enter rate : ");
-    scanf("%f",&r);
-    float t;
-    printf("Enter time : ");
-    scanf("%f",&t);
-    float c;
-    printf("Number of times interest should be compounded for : ");
-    scanf("%f",&c);
-    SimpleInterest(p,r,t,c);
-    CompoundInterest(p,r,t,c);
+    scanf("%f",&rate);
+    float time ;
+    printf("Enter time in year : ");
+    scanf("%f",&time);
+    float compounded;
+    printf("Enter number of time amount compounded per year : ");
+    scanf("%f",&compounded);
+    Compound(principle,rate,time,compounded);
     return 0;
 }
