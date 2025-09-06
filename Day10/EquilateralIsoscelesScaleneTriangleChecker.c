@@ -1,4 +1,3 @@
-/* roots of quadratic = -b+root(b^2-4ac)/2a and -y-root(b^2-4ac)/2a where a,b,c are constants of equation */
 #include <stdio.h>
 int triangle(int a,int b,int c) {
     if(a == b && a == c ) printf("Trignale is Equilateral");
