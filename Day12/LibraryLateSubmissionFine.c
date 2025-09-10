@@ -14,7 +14,9 @@ void fine(int days) {
         int x = days * 4 - 2;
         printf("Fine is of ruppees : %d",x);
     }
-    else printf("Membership cancelled");
+    else {
+       printf("Membership cancelled");
+    }
 }   
 int main() {
     int days;
