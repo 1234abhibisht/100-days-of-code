@@ -1,7 +1,11 @@
 #include <stdio.h>
 void EvenOdd(int n) {
-    if(n%2==0) printf("%d is Even",n);
-    else printf("%d is Odd",n);
+    if(n%2==0) {
+        printf("%d is Even",n);
+    }
+    else {
+        printf("%d is Odd",n);
+    }
 }
 int main() {
     int n;
