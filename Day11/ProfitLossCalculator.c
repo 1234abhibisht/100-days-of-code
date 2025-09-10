@@ -17,7 +17,9 @@ void ProfitLossPercent(int CP, int SP) {
         printf("Profit of : %f\n",profit);
         printf("Profit percent is : %f",profitpercent);
     }
-    else printf("Neither profit nor loss");
+    else {
+       printf("Neither profit nor loss");
+    }
 }
 int main() {
     int CP;
