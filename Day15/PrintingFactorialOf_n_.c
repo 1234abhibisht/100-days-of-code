@@ -8,7 +8,7 @@ void factorial(int n) {
 }
 int main() {
     int n;
-    printf("Enter value of n : ");
+    printf("Enter a number : ");
     scanf("%d",&n);
     factorial(n);
     return 0;
