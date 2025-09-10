@@ -15,12 +15,15 @@ int main()
         printf("If it is leap year enter 'y' or not a leap year enter 'n'\n");
         printf("Enter your response : ");
         scanf(" %c", &response); /* space is used as we have already scanf in int a so to skip input error we have done this*/
-        if (response == 'y')
+        if (response == 'y') {
             printf("February has 29 days");
-        else if (response == 'n')
+        }
+        else if (response == 'n') {
             printf("February has 28 days");
-        else
+        }           
+        else {
             printf("Invalid Input");
+        }  
         break;
     case 3:
         printf("March has 31 days");
