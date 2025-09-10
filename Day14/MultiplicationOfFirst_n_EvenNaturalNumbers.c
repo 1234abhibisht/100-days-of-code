@@ -2,7 +2,9 @@
 void multiplication(int n) {
     int mul = 1;
     for(int i = 2; i <= 2 * n; i++) {
-        if(i % 2 == 0) mul = mul * i;
+        if(i % 2 == 0) {
+            mul = mul * i;
+        }
     }
     printf("multiplication of first %d even natural numbers is : %d",n,mul);
 }
