@@ -20,6 +20,10 @@ int main() {
     int n;
     printf("Enter a number : ");
     scanf("%d",&n);
+    /* Here i am transferring input from user given in varialbe n to an array named arr,
+       such that each digit of the number is added in each index of array.
+        If I take input from user directly in an array, user have to add spaces between each digits,
+        so to solve this, first I have taken input in variable then transferred to array */
     int x = countnumber(n);
     int arr[x];
     int input = n;
