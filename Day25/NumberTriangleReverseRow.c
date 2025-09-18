@@ -5,7 +5,7 @@
             1 2 3 4 5*/
 
 #include <stdio.h>
-int triangle(int n) {
+void triangle(int n) {
     for(int i = n; i >= 1; i--) {  /* horizontal rows */
         int x = i;
         for(int j = n; j >= i; j--) {  /* vertical columns */
