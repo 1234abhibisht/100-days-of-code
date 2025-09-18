@@ -1,5 +1,5 @@
 #include <stdio.h>
-int triangle(int n) {
+void triangle(int n) {
     for(int i = 1; i <= n; i++) {  /* horizontal rows */
         int x = 1;
         for(int j =1; j <= i; j++) {  /* vertical columns */
