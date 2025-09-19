@@ -14,6 +14,7 @@ void triangle(int n) {
         }
         printf("\n");
     }
+            return;
 }
 int main() {
     int n;
