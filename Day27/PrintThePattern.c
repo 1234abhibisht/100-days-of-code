@@ -11,20 +11,24 @@
 #include <stdio.h>
 void triangle()
 {
-    for (int i = 1; i <= 9; i = i + 2)
+    int nst = 1;
+    int nst1 = 7;
+    for (int i = 1; i <= 5; i++)
     {
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= nst; j++)
         {
             printf("* ");
         }
+        nst += 2;
         printf("\n");
     }
-    for (int k = 7; k >= 1; k = k - 2)
+    for (int k = 1; k <= 4; k++)
     {
-        for (int l = 1; l <= k; l++)
+        for (int l = 1; l <= nst1; l++)
         {
             printf("* ");
         }
+        nst1 -= 2;
         printf("\n");
     }
     return;
