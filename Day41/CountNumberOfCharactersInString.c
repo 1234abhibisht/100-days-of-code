@@ -8,12 +8,12 @@ int main()
     /* we know a property that when user input a string in str, computer will automatically
        assign a NULL character '\0' at end of string where it is fininsed */
     int i = 0;
-    int count = 0;
+    int size = 0;
     while (str[i] != '\0')
     {
-        count++;
+        size++;
         i++;
     }
-    printf("Number of characters in string are %d",count);
+    printf("Number of characters in string are %d",size);
     return 0;
 }
