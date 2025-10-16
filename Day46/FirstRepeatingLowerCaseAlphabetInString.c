@@ -20,7 +20,9 @@ int firstRepeatingElement(char str[], int size)
             }
         }
     }
-    return '\0';
+    return '0';  /* if repeating alphabet does not exist in array */
+    /* I have return '0' because variable which called this function is of char datatype, so I need 
+       to return a character */
 }
 int main()
 {
@@ -35,7 +37,7 @@ int main()
         i++;
     }
     char result = firstRepeatingElement(str, size);
-    if (result == '\0')
+    if (result == '0')
     {
         printf("No repeating lower case alphabet found");
     }
